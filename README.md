@@ -5,6 +5,6 @@
     Yazılımcı Mekanı CodeJam2 İçin Hazırlanmıştır.
     <br />
     <br />
-    <a href="https://ymportfolyo.netlify.app">View Demo</a>
+    <a href="https://ymportfolyo.netlify.app" target="_blank">View Demo</a>
   </p>
 </div>
