@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YM Portfolyo</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- CSS DOSYA TANIMI -->
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- RESPONSIVE CSS DOSYA TANIMI -->
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="wrapper"></div><!-- BG RESMİ -->
+        <div class="floor"></div><!-- YER -->
+
+        <div class="painting"><!-- TABLO -->
+            <div class="aski"></div>
+            <div class="resim"></div>
+        </div>
+        <div class="window"><!-- CAM -->
+            <span id="moon"></span>
+
+        </div>
+        <div class="container"><!-- MASA & BİLGİSAYAR -->
+            <div class="cup"></div>
+            <div class="table">
+                <span class="handle" id="handle1"></span>
+                <span class="handle" id="handle2"></span>
+                <div id="margintop">
+                    <div class="computer-case">
+                        <div class="secret"></div>
+                        <span class="cdrom" id="cdrom"></span>
+                        <img src="./img/cd.png" alt="cd" id="cd-copy">
+                        <span class="marka">Pangu</span>
+                        <span class="usb"></span>
+                        <span class="jak"></span>
+                        <span class="power"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="lamp">
+                <div id="lampjoint"></div>
+                <div class="lamphead"></div>
+            </div>
+            <div class="monitor">
+                <span id="monitoricerik">CD YOK</span>
+                <span class="note" style="font-size:5px;font-weight: bold;">Yazılımcı Mekanı
+                </span>
+                <span id="monitor-base"></span>
+            </div>
+
+            <div class="semicircle"></div>
+        </div>
+        <div class="pano"><!-- CDLER-->
+            <div class="aski"></div>
+            <div class="panoici">
+                <div class="cd">
+                    <div class="cd-aciklama">
+                        <img src="./img/cd.png" onclick="plugcd(event,0);" alt="cd" id="cd1">
+                        <span>Hakkımda</span>
+                    </div>
+                    <div class="cd-aciklama">
+                        <img src="./img/cd.png" onclick="plugcd(event,1);" alt="cd" id="cd2">
+                        <span>Portfolyo</span>
+                    </div>
+                </div>
+                <div class="cd">
+                    <div class="cd-aciklama">
+                        <img src="./img/cd.png" onclick="plugcd(event,2);" alt="cd" id="cd3">
+                        <span>Yetenekler</span>
+                    </div>
+                    <div class="cd-aciklama">
+                        <img src="./img/cd.png" onclick="plugcd(event,3);" alt="cd" id="cd4">
+                        <span>İletişim</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullpage-view" id="fullpage-view"><!-- BÜYÜTÜLEN MONİTÖR -->
+            <div class="out-shape">
+
+                <div class="hakkimizda">
+
+                    <div class="box">
+                        <div class="top">
+                            <img src="./img/berkay.png" alt="">
+                            Berkay Patar
+                        </div>
+                        <div class="bot">
+                            <div class="box">
+                                18 yaşında 2016'den beri yazılımla ilgilenen HTML , CSS , JS ve PHP bilgisi olan bir web
+                                geliştiriciyim. İstanbul Topkapı Üniversitesi'nde 1.sınıf bilgisayar programcılığı
+                                okumaktayım.
+                                Freelencer olarak web projeleri geliştiriyorum.
+                            </div>
+                        </div>
+                        <div class="button" onclick="cdcikar(event)">
+                            <button>
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <img src="./img/cd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>CD Çıkar</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolyo">
+                    <div class="box">
+                        <div class="top">
+                            Yaptığım Bazı Projeler
+                        </div>
+                        <div class="bot">
+                            <div class="box">
+                                <div class="projeler">
+                                    <div class="proje">
+                                        <div class="proje-img">
+                                            <img src="./img/nft.jpg" alt="">
+                                        </div>
+                                        <div class="proje-aciklama">
+                                            <span class="proje-baslik">NFT Market</span>
+                                            <span class="proje-icerik">NFT Marketplace web site tasarımı.</span>
+                                        </div>
+                                    </div>
+                                    <div class="proje">
+                                        <div class="proje-img">
+                                            <img src="./img/istek.jpg" alt="">
+                                        </div>
+                                        <div class="proje-aciklama">
+                                            <span class="proje-baslik">Radyo İstek Paneli</span>
+                                            <span class="proje-icerik">Yazılımcı Mekanı Radyo istek admin paneli.</span>
+                                        </div>
+                                    </div>
+                                    <div class="proje">
+                                        <div class="proje-img">
+                                            <img src="./img/cafe.png" alt="">
+                                        </div>
+                                        <div class="proje-aciklama">
+                                            <span class="proje-baslik">Cafe Web sitesi</span>
+                                            <span class="proje-icerik">Cafeler için hazırlanmış online menü sistemli web
+                                                sitesi.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button" onclick="cdcikar(event)">
+                            <button>
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <img src="./img/cd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>CD Çıkar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="yetenekler">
+                    <div class="box">
+                        <div class="top">
+                            Yeteneklerim
+                        </div>
+                        <div class="bot">
+                            <div class="box">
+                                <div class="yetenek">
+                                    <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 0">
+                                        </circle>
+                                        <text class="percentage" x="50%" y="57%"
+                                            transform="matrix(0, 1, -1, 0, 80, 0)">100%</text>
+                                    </svg>
+                                    <span>HTML</span>
+
+                                </div>
+                                <div class="yetenek">
+                                    <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"
+                                            style="stroke-dashoffset: 39.58406743523136"></circle>
+                                        <text class="percentage" x="50%" y="57%"
+                                            transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                                    </svg>
+                                    <span>CSS</span>
+                                </div>
+                                <div class="yetenek">
+                                    <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"
+                                            style="stroke-dashoffset: 39.58406743523136"></circle>
+                                        <text class="percentage" x="50%" y="57%"
+                                            transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                                    </svg>
+                                    <span>JS</span>
+                                </div>
+                                <div class="yetenek">
+                                    <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 80">
+                                        </circle>
+                                        <text class="percentage" x="50%" y="57%"
+                                            transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                                    </svg>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button" onclick="cdcikar(event)">
+                            <button>
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <img src="./img/cd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>CD Çıkar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="iletisim">
+                    <div class="box">
+                        <div class="top">
+                            İletişim
+                        </div>
+                        <div class="bot">
+                            <div class="box">
+                                <span>Tel : <a href="tel:+905465110000">+90 (546) 511 xx xx</a></span>
+                                <span>E-Mail : <a href="mailto:berkaypatar@yazilimcimekani.com">
+                                        berkaypatar@yazilimcimekani.com</a></span>
+                                <span>Discord : Alwose#0125 </span>
+                                <span>Yazılımcı Mekanı : <a href="http://discord.gg/yazilimcimekani" target="_blank"
+                                        rel="noopener noreferrer">Yazılımcı Mekanı Discord</a></span>
+                            </div>
+                        </div>
+                        <div class="button" onclick="cdcikar(event)">
+                            <button>
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <img src="./img/cd2.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>CD Çıkar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="marka-view">Pangu</div>
+            <div class="marka-view-model">NB-2505</div>
+        </div>
+    </div>
+    <div class="yataybakis">Siteyi Görüntülemek İçin Telefonu Yatay Çeviriniz.</div><!-- DİKEY EKRAN ENGELİ -->
+    
+    <script>
+        let n = 0;
+        let x = document.getElementById("cdrom");
+        let y = document.getElementById("cd-copy");
+        let z = document.getElementsByClassName("cd-aciklama");
+        let a = document.getElementById("monitoricerik");
+
+        let takili;
+
+        //cd takma fonksiyonu
+        function plugcd(event, cd) {
+
+            if (n == 0) {
+                if (takili != undefined) {
+                    z[takili].getElementsByTagName("img")[0].style.opacity = "1";
+                }
+
+                // 
+                switch (cd) {
+                    case 0:
+                        a.innerHTML = "BURAYA TIKLA";
+                        a.setAttribute("onclick", "fullpage(0)");
+                        break;
+                    case 1:
+                        a.innerHTML = "BURAYA TIKLA";
+                        a.setAttribute("onclick", "fullpage(1)");
+                        break;
+                    case 2:
+                        a.innerHTML = "BURAYA TIKLA";
+                        a.setAttribute("onclick", "fullpage(2)");
+                        break;
+                    case 3:
+                        a.innerHTML = "BURAYA TIKLA";
+                        a.setAttribute("onclick", "fullpage(3)");
+                        break;
+                }
+
+                n = 1;
+                let which_cd = event.path[0];
+                takili = cd;
+                y.style.display = "block";
+                y.style.animationName = "nuray";
+                which_cd.style.opacity = "0";
+                for (let i = 0; i < z.length; i++) {
+                    z[i].style.pointerEvents = "none";
+                    z[i].style.cursor = "not-allowed";
+                }
+            }
+
+            let int = setInterval(() => {
+                y.style.display = "none";
+                y.style.animationName = "unset";
+                for (let i = 0; i < z.length; i++) {
+                    z[i].style.pointerEvents = "all";
+                    z[i].style.cursor = "default";
+                }
+                n = 0;
+                clearInterval(int);
+            }, 2000);
+        }
+
+
+        //tam ekran yapma fonksiyonu
+        function fullpage(konu) {
+            let fullpage = document.getElementById("fullpage-view");
+            let hakkimizda = document.getElementsByClassName("hakkimizda")[0];
+            let portfolyo = document.getElementsByClassName("portfolyo")[0];
+            let yetenekler = document.getElementsByClassName("yetenekler")[0];
+            let iletisim = document.getElementsByClassName("iletisim")[0];
+            switch (konu) {
+                case 0:
+                    fullpage.style.display = "flex";
+                    hakkimizda.style.display = "flex";
+                    break;
+                case 1:
+                    fullpage.style.display = "flex";
+                    portfolyo.style.display = "flex";
+                    break;
+                case 2:
+                    fullpage.style.display = "flex";
+                    yetenekler.style.display = "flex";
+                    break;
+                case 3:
+                    fullpage.style.display = "flex";
+                    iletisim.style.display = "flex";
+                    break;
+            }
+
+
+        }
+        //cd çıkarma fonksiyonu
+        function cdcikar(event) {
+            let cd1 = document.getElementById("cd1");
+            let cd2 = document.getElementById("cd2");
+            let cd3 = document.getElementById("cd3");
+            let cd4 = document.getElementById("cd4");
+            let which_cd;
+            let boxes;
+            let cds;
+            if (event.path[0].tagName == "BUTTON") {
+                which_cd = event.path[5];
+                boxes = event.path[3];
+            } else if (event.path[0].tagName == "IMG") {
+                which_cd = event.path[8];
+                boxes = event.path[6];
+            } else if (event.path[0].classList[0] == "svg-wrapper-1") {
+                which_cd = event.path[6];
+                boxes = event.path[4];
+            } else if (event.path[0].classList[0] == "svg-wrapper") {
+                which_cd = event.path[7];
+                boxes = event.path[5];
+            } else {
+                which_cd = event.path[6];
+                boxes = event.path[4];
+
+            }
+
+            if (boxes.classList[0] == "hakkimizda") {
+                cd1.style.opacity = "1";
+            } else if (boxes.classList[0] == "portfolyo") {
+                cd2.style.opacity = "1";
+            } else if (boxes.classList[0] == "yetenekler") {
+                cd3.style.opacity = "1";
+            } else if (boxes.classList[0] == "iletisim") {
+                cd4.style.opacity = "1";
+            }
+
+            which_cd.style.display = "none";
+            boxes.style.display = "none";
+            takili = undefined;
+            a.innerHTML = "CD YOK";
+            a.setAttribute("onclick", "");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

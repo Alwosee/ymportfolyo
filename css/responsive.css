@@ -1,0 +1,249 @@
+/*1200px'den dar olan cihazlarda css*/
+@media screen and (max-width: 1200px) {
+    .painting {
+        left: 3%;
+    }
+    
+    .pano {
+        right: 3%;
+    }
+}
+/*1024px'den dar olan ve dikey cihazlarda css*/
+@media only screen and (orientation: portrait) and (max-width: 1024px) {
+    .yataybakis {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #28293D;
+        top: 0;
+        color: white;
+        text-align: center;
+        z-index: 999999;
+    }
+    .main{
+        display: none;
+    }
+}
+/*1024px'den dar olan ve yatay cihazlarda css*/
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .pano {
+        right: 3%;
+    }
+
+    .container {
+        width: 370px;
+        height: 250px;
+    }
+
+    .monitor {
+        width: 140px;
+        height: 85px;
+        top: -7px;
+    }
+
+    .lamp {
+        top: 36%;
+    }
+
+    .cup {
+        top: 12%;
+    }
+
+    .lamp::after,
+    .lamp::before {
+        height: 40px;
+    }
+
+    .lamp::before {
+        top: -34px;
+        left: 0;
+    }
+
+    .lamp::after {
+        top: -77px;
+        left: 19px;
+    }
+
+    .lamphead {
+        top: -77px;
+    }
+
+    #lampjoint {
+        top: -44px;
+        left: -6px;
+    }
+
+    .table {
+        width: 100%;
+        height: 10px;
+        position: relative;
+        top: 40%;
+        left: 3%;
+    }
+
+    .table::before {
+        width: 80px;
+        height: 40px;
+        left: -16px;
+    }
+
+    .table::after {
+        width: 80px;
+        height: 90px;
+        left: -16px;
+        top: 5px;
+    }
+
+    #handle1 {
+        top: 1.7rem;
+    }
+
+    .handle {
+        height: 0.4rem;
+        width: 2rem;
+    }
+
+    .computer-case {
+        height: 120px;
+        top: -60px;
+        left: 67.5%;
+    }
+
+    .marka {
+        top: 70px;
+    }
+
+    .power {
+        top: 100px;
+    }
+
+    #monitor-base {
+        width: 40px;
+        height: 8px;
+        top: 115%;
+    }
+
+    .monitor::after {
+        width: 15px;
+        height: 15px;
+        top: 100%;
+        left: 43.9%;
+    }
+
+    .monitor::before {
+        width: 120px;
+        height: 65px;
+    }
+
+    .hakkimizda .box,
+    .portfolyo .box{
+        gap: 5px;
+    }
+
+    .hakkimizda .top img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hakkimizda .top {
+        flex-direction: row;
+        gap: 0px;
+        column-gap: 10px;
+        align-items: center;
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .hakkimizda .bot .box,
+    .portfolyo .bot .box ,
+    .yetenekler .bot .box,
+    .iletisim .bot .box {
+        font-size: 12px;
+        box-shadow: none;
+    }
+
+    .hakkimizda .box,
+    .portfolyo .box ,
+    .yetenekler .box,
+    .iletisim .box {
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
+        box-shadow: none;
+        padding: 0;
+        box-shadow: inset 0 0 10px 5px rgb(24, 24, 24);
+    }
+
+    .portfolyo .bot .box ,.iletisim .bot .box{
+        width: 95%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .proje-baslik,
+    .portfolyo .top ,
+    .yetenekler .top,
+    .iletisim .top{
+        font-size: 15px;
+    }
+
+    .proje {
+        gap: 0px;
+    }
+
+    .proje img {
+        width: 110px;
+        height: 110px;
+        border-radius: 25px;
+    }
+
+    .marka-view-model,
+    .marka-view {
+        height: unset;
+    }
+
+    button {
+        padding: 0px 10px 0px 0px;
+        padding-left: 0.2em;
+    } 
+    button img{
+        width: 20px;
+    }
+    button span {
+        font-size: 13px;
+    }
+    .yetenekler .bot .yetenek{
+        width: 80%;
+        height: 80%;
+    }
+    .yetenekler .box,.yetenekler .bot .box{
+        gap:0;
+        padding: 0;
+    }
+}
+/*1020px'den dar olan ve dikey cihazlarda css*/
+@media screen and (max-width: 1020px) {
+    .painting {
+        display: none;
+    }
+
+    .window,
+    .container {
+        left: 30%;
+    }
+
+    .pano {
+        right: 10%;
+    }
+}
+/*767px'den dar olan ve dikey cihazlarda css*/
+@media screen and (max-width: 767px) {
+
+    .painting,
+    .window {
+        display: none;
+    }
+}
